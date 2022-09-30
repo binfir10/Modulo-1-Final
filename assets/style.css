@@ -4,6 +4,7 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 65px;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -150,6 +151,7 @@ header {
     flex-direction: row;
     gap: 30px;
 }
+
 .btn {
     font-size: 18px;
     text-align: center;
@@ -243,11 +245,13 @@ header {
     border-radius: 10px;
     cursor: pointer;
 }
+
 .active {
-    background:#c35d22;
+    background: #c35d22;
 }
-.category:hover{
-    background:#c35d22;
+
+.category:hover {
+    background: #c35d22;
 
 }
 
@@ -276,7 +280,7 @@ header {
 .products__info {
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     gap: 20px;
 
 }
@@ -336,8 +340,8 @@ header {
 
 .contact__direction {
     display: flex;
-    justify-content:space-between;
-    align-items:flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
     gap: 35px;
     padding: 20px;
 }
@@ -384,18 +388,18 @@ header {
     width: 507px;
 }
 
-.social{
+.social {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
+
 .contact__social {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 50px;
+    gap: 35px;
 }
-
 
 .social h3 {
     font-size: 20px;
@@ -403,11 +407,30 @@ header {
 }
 
 .contact__social a {
-    color: #101010;
+    color: #f0f0f0;
+    background-color: #000000;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid white;
 }
 
-.contact__social a:hover {
-    color: #c35d22;
+.fa-facebook-f:hover {
+    background-color: #0a66c2;
+    transition: all 0.8s ease;
+}
+
+.fa-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6239f 60%, #285aeb 90%);
+    transition: all 0.8s ease;
+}
+
+.fa-twitter:hover {
+    background-color: #1da1f2;
+    transition: all 0.8s ease;
 }
 
 footer {
