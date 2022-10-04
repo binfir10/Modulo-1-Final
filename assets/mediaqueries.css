@@ -146,6 +146,7 @@
         align-items: center;
     }
     .social {
+        display: flex;
         align-items: center;
         justify-content: center;
     }
