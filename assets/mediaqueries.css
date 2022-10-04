@@ -8,7 +8,7 @@
     }
 
     .navbar ul {
-        background-color: #000000;
+        background-color: #131212;
         width: 100%;
         height: calc(100vh - 60px);
         position: absolute;
@@ -45,15 +45,12 @@
     #menu__toggle:checked+.navbar__links {
         transform: translateX(0);
         transition: all 0.4s ease-in;
-
     }
+
+
 
     #hero {
         width: 100%;
-    }
-
-    .hero__info__img {
-        display: none;
     }
 
     .hero__info {
@@ -86,7 +83,8 @@
         font-size: 15px;
         gap: 15px;
     }
-    #about_us{
+
+    #about_us {
         padding: 15px 0;
     }
 
@@ -113,11 +111,10 @@
         max-width: 300px;
     }
     .category {
-        width:140px;
+        width: 140px;
         display: flex;
         align-items: center;
         justify-content: center;
-        
     }
 
 
@@ -158,6 +155,17 @@
         padding: 15px 0;
     }
 
+    footer a {
+        font-size: 15px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+    footer span {
+        font-size: 15px;
+    }
+
 
     .footer__links {
         flex-direction: column;
@@ -189,6 +197,7 @@
     .categories {
         flex-wrap: wrap;
     }
+
     .category {
         width: 80px;
     }
