@@ -52,6 +52,8 @@
     #hero {
         width: 100%;
         padding: 15px;
+        max-height: 430px;
+        gap: 20px;
     }
 
     .hero__info {
@@ -72,7 +74,7 @@
         text-align: center;
         justify-content: center;
         align-items: center;
-        gap: 15px;
+        gap: 21px;
         flex-direction: column;
     }
 
