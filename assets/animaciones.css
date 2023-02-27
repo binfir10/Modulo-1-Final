@@ -1,6 +1,6 @@
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 65px;
+  scroll-padding-top: 75px;
 }
 
 
@@ -55,6 +55,77 @@ html {
   transform: scale(1.1);
   transition: all 0.2s ease-in;
   z-index: 1;
+  background-color: rgb(43, 43, 43);
 }
+
+
+/*Header*/
+/*Para efecto de glassmorphismo cuando abrimos menú hamburguesa y carrito*/
+
+
+.overlay {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1; /*Para que quede por encima del resto de las cosas*/
+  /*Efecto*/
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: none;
+}
+
+/*Toggle para el overlay (para que funcione unicamente cuando abrimos carrito o menu hamburguesa. */
+
+.show-overlay {
+  display: block;
+}
+
+
+
+/*CARRITO */
+/*Despues de cambiar el carrito en el html y en styles.css , aplicamos una animación en hover*/
+.cart-icon {
+  transition: all 0.2s ease-out;
+}
+
+.cart-icon:hover {
+  color:rgb(126, 169, 183);
+  transition: all 0.2s ease-in;
+}
+
+/*Botones del carrito*/
+.quantity-selector {
+  transition: all 0.2s ease-in;
+}
+
+.quantity-selector:hover {
+  cursor: pointer;
+  background-color: rgb(0, 94, 128);
+  transition: all 0.2s ease-in;
+}
+
+/*Botones comprar(carrito) y add(producto) y BENUCBER(Hero)*/
+.btn-add,
+.hero-info a {
+  transition: all 0.2s ease-out;
+}
+
+
+/* comprar carrito */
+.btn-add:hover {
+  background-color: aqua;
+  transition: all 0.2s ease-in;
+}
+
+/* Boton ver mas de la sección de productos */
+.btn-load {
+  transition: all 0.2s ease-out;
+  font-weight: 600;
+}
+
 
 

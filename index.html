@@ -5,29 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/animaciones.css">
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="stylesheet" href="/assets/mediaqueries.css">
-    <link rel="stylesheet" href="/assets/animaciones.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>PixelDesk</title>
-    <link rel="icon" type="image/png" href="./assets/img/logo.png">
+    <link rel="icon" type="image/png" href="./assets/img/icono.png">
 </head>
 
 <body>
     <header>
-        <img src="/assets/img/logo.png" alt="logo" class="header__logo">
+        <a href="./index.html"><img src="/assets/img/technology.png" alt="logo" class="header__logo"></a>
         <nav class="navbar">
-            <label for="cart-toggle" class="cart-label"><i class="fa-sharp fa-solid fa-cart-shopping"></i></label>
-            <label for="menu__toggle"><i class="fas fa-bars"></i></label>
-            <input type="checkbox" id="menu__toggle" />
+            <div class="menu-label">
+                <i class="fas fa-bars"></i>
+            </div>
+
             <ul class="navbar__links">
                 <li><a href="#hero" class="lin">Home</a></li>
                 <li><a href="#about_us" class="lin">Sobre Nosotros</a></li>
                 <li><a href="#products" class="lin">Productos</a></li>
                 <li><a href="#contact" class="lin">Contacto</a></li>
             </ul>
+
+            <div class="cart-label">
+                <i class="fa-solid fa-cart-shopping cart-icon">
+                    <div class="cart-bubble">0</div>
+                </i>
+            </div>
+
+            <div class="cart">
+                <h2 class="cart-tittle">Carrito</h2>
+                <div class="cart-container"></div>
+                <span class="divider"></span>
+                <div class="cart-total">
+                    <p>Total: </p>
+                    <span class="total"> $</span>
+                </div>
+                <button class="btn-add">Comprar</button>
+                <button class="btn-delete">Vaciar carrito</button>
+            </div>
+            <div class="overlay"></div>
         </nav>
     </header>
     <main>
@@ -36,7 +56,7 @@
                 <h1>Eleva tu nivel con todo el poder Gamer</h1>
                 <p>Potencia cualquier actividad o proyecto con nuestras Notebooks de ultima generación al mejor precio y
                     con el mejor financiamiento ! </p>
-                <div class="hero__botton">
+                <div class="hero__bottom">
                     <ul>
                         <li><a href="./login.html" class="btn btn--login"><span class="btn__span">Iniciar Sesión</span></a></li>
                         <li><a href="./register.html" class="btn btn--register">Registrarme</a></li>
@@ -53,85 +73,23 @@
             </p>
         </section>
         <section id="products">
-            <h2 class="popular__title">NUESTROS PRODUCTOS DESTACADOS</h2>
-            <div class="categories">
-                <button class="category active">Todas</button>
-                <button class="category"> Apple</button>
-                <button class="category"> Asus</button>
-                <button class="category"> Dell</button>
-                <button class="category"> Hp</button>
-                <button class="category"> Lenovo</button>
-            </div>
-            <div class="popular">
-                <div class="products__popular">
-                    <img src="./assets/img/products/asusx515.jpg">
-                    <h4>ASUS X515 15'</h4>
-                    <div class="products__info">
-                        <h3>Precio: <span>$ 120.000</span></h3>
-                        <button>Comprar</button>
-                    </div>
+            <h2>NUESTROS PRODUCTOS DESTACADOS</h2>
+            <div class="products__div">
+                <div class="categories">
+                    <button class="category active">Todas</button>
+                    <button class="category" data-category="mac">Mac</button>
+                    <button class="category" data-category="asus">Asus</button>
+                    <button class="category" data-category="hp">HP</button>
+                    <button class="category" data-category="lenovo">Lenovo</button>
+                    <button class="category" data-category="otras">Otras</button>
                 </div>
-                <div class="products__popular">
-                    <img src="./assets/img/products/ideapad.jpg">
-                    <h4>LENOVO IDEAPAD 3 15'</h4>
-                    <div class="products__info">
-                        <h3>Precio: <span>$ 105.000</span></h3>
-                        <button>Comprar</button>
-                    </div>
-                </div>
-                <div class="products__popular">
-                    <img src="./assets/img/products/mac1.png">
-                    <h4>MACBOOK AIR M1 13'</h4>
-                    <div class="products__info">
-                        <h3>Precio: <span>$ 269.000</span></h3>
-                        <button>Comprar</button>
-                    </div>
-                </div>
-                <div class="products__popular">
-                    <img src="./assets/img/products/hp240.png">
-                    <h4>HP 240 G7 14'</h4>
-                    <div class="products__info">
-                        <h3>Precio: <span>$ 115.000</span></h3>
-                        <button>Comprar</button>
-                    </div>
-                </div>
-                <div class="products__popular">
-                    <img src="./assets/img/products/mac13.jpg">
-                    <h4>MACBOOK PRO M1 13'</h4>
-                    <div class="products__info">
-                        <h3>Precio: <span>$ 280.000</span></h3>
-                        <button>Comprar</button>
-                    </div>
-                </div>
-                <div class="products__popular">
-                    <img src="./assets/img/products/asuszenbook14.png">
-                    <h4>ASUS ZENBOOK 14'</h4>
-                    <div class="products__info">
-                        <h3>Precio: <span>$ 200.000</span></h3>
-                        <button>Comprar</button>
-                    </div>
-                </div>
-                <div class="products__popular">
-                    <img src="./assets/img/products/hp245.jpeg">
-                    <h4>HP 245 G7 14'</h4>
-                    <div class="products__info">
-                        <h3>Precio: <span>$ 140.000</span></h3>
-                        <button>Comprar</button>
-                    </div>
-                </div>
-                <div class="products__popular">
-                    <img src="./assets/img/products/dell.png">
-                    <h4>DELL INSPIRION 3511 14'</h4>
-                    <div class="products__info">
-                        <h3>Precio: <span>$ 135.000</span></h3>
-                        <button>Comprar</button>
-                    </div>
+                <div class="products__container">
                 </div>
             </div>
+            <button class="btn-load">Ver Más</button>
         </section>
-
         <section id="contact">
-            <h2 class="contact__title">CONTACTOS</h2>
+            <h2>CONTACTOS</h2>
             <div class="contact__direction">
                 <div class="contact__direction__info">
                     <div class="datos">
@@ -175,8 +133,12 @@
                 <li><a href="#">Trabajá con Nosotros</a></li>
             </ul>
         </div>
-        <p class="copyright">Copyright © 2022 <span> PIXELDESK </span> Todos los derechos reservados.</p>
+        <p class="copyright">Copyright © 2023 <span> PIXELDESK </span> Todos los derechos reservados.</p>
     </footer>
+    <div class="add-modal"></div>
+    <script src="./assets/data.js"></script>
+    <script src="./assets/index.js"></script>
+
 </body>
 
 </html>

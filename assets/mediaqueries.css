@@ -1,13 +1,15 @@
 @media (max-width: 990px) {
     header {
         padding: 10px;
+
     }
 
     .navbar {
         gap: 10px;
     }
 
-    .navbar ul {
+    .navbar__links {
+        font-size: 55px;
         background-color: #131212;
         width: 100%;
         height: calc(100vh - 60px);
@@ -17,18 +19,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transform: translateX(200%);
-        transition: all 0.4s ease-out;
         font-size: 30px;
-    }
-
-    .navbar__links a {
-        font-size: 55px;
-    }
-
-    .navbar i {
-        display: block;
-
+        z-index: 2;
+        display: none;
     }
 
     .navbar__links a {
@@ -42,11 +35,24 @@
         color: aliceblue;
     }
 
-    #menu__toggle:checked+.navbar__links {
-        transform: translateX(0);
-        transition: all 0.4s ease-in;
+    .menu-label {
+        display: flex;
+        order: 2;
+        cursor: pointer;
     }
 
+    .menu-label img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .open-menu {
+        display: flex;
+    }
+
+    .cart-bubble {
+        right: 40px;
+    }
 
 
     #hero {
@@ -67,9 +73,13 @@
 
     .hero__info h1 {
         width: 100%;
-        max-width: 500px;
+        max-width: 85%;
         font-size: 35px;
         min-width: unset;
+    }
+
+    .hero__info p {
+        max-width: 80%;
     }
 
     .hero__botton ul {
@@ -108,15 +118,75 @@
         align-items: center;
         gap: 30px;
         padding: 15px 0;
+        padding-bottom: 50px;
+    }
+
+    .products__div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 5px;
+    }
+
+    .categories {
+        width: 600px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product__info img {
+        width: 100px;
+        height: 60px;
+    }
+
+    .product__info {
+        gap: 8px;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .products__description {
+        max-width: 300px;
+    }
+
+    .products__title {
+        font-size: 20px;
+    }
+
+    .products__specs {
+        font-size: 13px;
+    }
+
+    .products__price h3 {
+        font-size: 17px;
+    }
+
+    products__popular button {
+        width: 5px;
+
     }
 
     .categories {
         display: flex;
+        flex-direction: row;
+        justify-content: center;
         flex-wrap: wrap;
         max-width: 300px;
+        align-items: center;
     }
+
+    .popular__container {
+        padding-bottom: 0;
+    }
+
     .category {
-        width: 140px;
+        width: 120px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -129,6 +199,7 @@
         align-items: center;
         justify-content: center;
         gap: 15px;
+        padding: 25px 0;
     }
 
 
@@ -145,6 +216,7 @@
         display: flex;
         align-items: center;
     }
+
     .social {
         display: flex;
         align-items: center;
@@ -174,6 +246,7 @@
     footer p {
         font-size: 13px;
     }
+
     footer span {
         font-size: 15px;
     }
@@ -206,6 +279,10 @@
         align-items: center;
     }
 
+    #products {
+        width: 100%;
+    }
+
     .categories {
         flex-wrap: wrap;
     }
@@ -214,4 +291,41 @@
         width: 80px;
     }
 
+    .products__popular button {
+        height: 30px;
+        width: 100px;
+
+    }
+
+    .products__info {
+        gap: 5px;
+    }
+
+    .cart {
+        width: 100%;
+    }
+
+    .cart-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .item-title,
+    .item-bid,
+    .item-price {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .empty-msg{
+        text-align: center;
+        
+    }
 }

@@ -25,7 +25,7 @@ html {
 
 .form__title {
     font-size: 40px;
-    color: #000000;
+    color: #ffffff;
     padding: 20px 0;
     align-items: center;
 }
@@ -34,7 +34,7 @@ html {
 .form__input {
     padding: 12px 35px 12px 12px;
     border-radius: 5px;
-    background-color: #12110C;
+    background-color: #1c2225;
     color: #ffff;
     border: none;
     outline: none;
@@ -45,8 +45,8 @@ html {
     margin-top: 20px;
     width: 200px;
     font-size: 18px;
-    background: linear-gradient(95deg, #b96300, #e69808);
-    color: #000000;
+    background: linear-gradient(95deg, #09ffff, #0d00ff);
+    color: #ffffff;
     transition: all 0.3s ease;
     padding: 10px 10px;
     border-radius: 5px;
@@ -63,16 +63,16 @@ html {
     align-items: center;
     justify-content: center;
     gap: 25px;
-    color: #373737;
+    color: #919191;
 }
 
 .redirection a {
     font-weight: 700;
-    color: #000000;
+    color: #ffffff;
 }
 
 .redirection a:hover {
-    color: #b96300;
+    color: #16f7ff;
     text-decoration: underline;
 }
 
