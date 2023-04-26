@@ -12,6 +12,46 @@ html {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+:root {
+    --background: #1f1f1f;
+    --text-color: #ceecef;
+    --secondary-color:#b5b5b5;
+    --linear-border: rgb(139, 139, 139);
+    --price-color:#ffc52c;
+    --orange: #e4572e;
+    --blue:  #030045;
+}
+
+.light-mode {
+    --background: #ceecef;
+    --text-color: #1f1f1f;
+    --secondary-color:#1f1f1f;
+    --price-color:#03acaf;
+}
+
+.theme-mode-icon{
+    padding: 3px;
+    width: 35px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.light-mode-icon:hover{
+    background: #00ebfc50;
+}
+
+.light-mode .cart {
+    background:#ceecef ;
+}
+
+.light-mode .cart-item {
+    background: #030d4f32;
+}
+
+.light-mode .category {
+    border-color:#1f1f1f;
+}
+
 .form__container {
     display: flex;
     flex-direction: column;

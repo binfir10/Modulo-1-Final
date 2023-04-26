@@ -14,6 +14,7 @@ const overlay = document.querySelector(".overlay");
 const comp = document.querySelector(".comp");
 const successModal = document.querySelector(".add-modal");
 const deleteBtn = document.querySelector(".btn-delete");
+const darkToggle = document.getElementById("toggle-light-mode")
 
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -306,10 +307,16 @@ const handleQuantity = (e) => {
 
 }
 
+const themeMode = () => {
+    document.body.classList.toggle("light-mode");
+    if (document.body.classList.contains("light-mode")) {
+        darkToggle.src = "./assets/img/dark-mode-icon.png";
+    }
+    else {
+        darkToggle.src = "./assets/img/light-mode-icon.png";
+    }
 
-
-
-
+}
 
 const init = () => {
     renderProducts();
@@ -328,6 +335,8 @@ const init = () => {
     buyBtn.addEventListener("click", completeBuy);
     deleteBtn.addEventListener("click", deleteCart);     
     productsCart.addEventListener("click", handleQuantity);
+    darkToggle.addEventListener("click", themeMode)
+
 
 };
 

@@ -51,7 +51,11 @@
     }
 
     .cart-bubble {
-        right: 40px;
+        right: 82px;
+    }
+
+    .theme-mode-icon{
+        padding: 5px;
     }
 
 
